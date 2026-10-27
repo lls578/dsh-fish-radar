@@ -61,6 +61,12 @@ DSH（DeepSeek Harness）插件：**鱼群雷达**。给一个 B站 视频做评
 - 证据样例里的 `@昵称` 会替换成 `@***`，报告里不出现用户 ID
 - 可选本地 cookie（默认 `~/.dsh/bili-main/credentials.json`），只用于请求、不写日志
 
+
+## 视频介绍
+
+- B站：<https://www.bilibili.com/video/BV1DdxT6MEa7>（「拒绝废话：给B站评论区装个鱼群雷达」）
+
+
 ## 安装
 
 ```powershell
