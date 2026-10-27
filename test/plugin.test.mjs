@@ -44,6 +44,10 @@ const b = trigrams("插件只读字幕，评论区前排当事实抄");
 if (jaccard(a, b) !== 1) throw new Error("jaccard same text should be 1");
 const masked = maskText("@张三 你好 @李四");
 if (masked.includes("张三") || masked.includes("李四")) throw new Error("mask leaked name: " + masked);
+const tiny = analyzeComments([{ content: "就一条评论", like: 1 }], { play: 100 });
+if (tiny.level !== "样本不足" || tiny.fish_score !== null) throw new Error("low sample guard failed: " + JSON.stringify(tiny));
+console.log("[test] low sample guard ok");
+
 console.log("[test] jaccard/mask ok");
 
 // ── 插件注册测试 ───────────────────────────────────────────
