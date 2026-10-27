@@ -64,6 +64,14 @@ DSH（DeepSeek Harness）插件：**鱼群雷达**。给一个 B站 视频做评
 - 可选本地 cookie（默认 `~/.dsh/bili-main/credentials.json`），只用于请求、不写日志
 
 
+## 截图 &amp; 示例输出
+
+![鱼群雷达扫描结果](docs/scan.jpg)
+![传闻核查](docs/claim-check.jpg)
+
+完整示例：[docs/example-output.json](docs/example-output.json)（真实运行：案发现场 BV1HrJb6iEQk）
+
+
 ## 视频介绍
 
 - B站：<https://www.bilibili.com/video/BV1DdxT6MEa7>（「拒绝废话：给B站评论区装个鱼群雷达」）
