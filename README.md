@@ -96,6 +96,12 @@ node test/plugin.test.mjs        # 单元测试（不联网）
 node scripts/demo.mjs BV1HrJb6iEQk BV16CnZ6DEyc   # 真实数据演示（联网）
 ```
 
+## 相关项目
+
+- [dsh-plugin-checkup](https://github.com/lls578/dsh-plugin-checkup) —— 插件体检（分类/查重/未启用/更新）
+- [dsh-bili-manager](https://github.com/lls578/dsh-bili-manager) —— B站 账号工具箱（whoami/stats/reply/pin/danmaku）
+- [dsh-meme-library](https://github.com/lls578/dsh-meme-library) —— 梗库（6668 条）
+
 ## License
 
 MIT
