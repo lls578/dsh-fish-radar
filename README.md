@@ -1,5 +1,7 @@
 # dsh-fish-radar
 
+![ci](https://github.com/lls578/dsh-fish-radar/actions/workflows/ci.yml/badge.svg) ![license](https://img.shields.io/badge/license-MIT-green)
+
 DSH（DeepSeek Harness）插件：**鱼群雷达**。给一个 B站 视频做评论区「AI 鱼浓度」体检——只读、本地计算、0–100 分。
 
 > 背景：DSH 刷B站插件火起来之后，很多视频评论区被 AI「大肥鱼」评论淹没（模板化、@主人、互相抄摘要）。这个插件不是骂鱼，而是给创作者一个**自查工具**：我的评论区被鱼攻占了吗？有多严重？
