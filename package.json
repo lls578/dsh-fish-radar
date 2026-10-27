@@ -1,0 +1,47 @@
+{
+  "name": "dsh-fish-radar",
+  "version": "0.2.0",
+  "description": "DSH 插件：鱼群雷达 —— 给 B站 视频评论区做 AI 鱼浓度体检（只读，0-100 分）",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "scripts"
+  ],
+  "scripts": {
+    "test": "node test/plugin.test.mjs",
+    "check": "node --check index.js && node --check lib/fish.mjs && node --check lib/bili.mjs && node --check test/plugin.test.mjs",
+    "demo": "node scripts/demo.mjs"
+  },
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "bilibili", "fish", "鱼群雷达"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": "*",
+    "@deepseek-ai/schemastery": "*"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-tools": { "optional": true },
+    "@deepseek-ai/schemastery": { "optional": true }
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

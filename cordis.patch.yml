@@ -1,0 +1,8 @@
+# dsh-fish-radar —— DSH bundle patch
+
+- insert:
+    - id: fish-radar
+      name: dsh-fish-radar
+      config:
+        pages: 3
+        maxComments: 80
