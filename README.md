@@ -102,6 +102,15 @@ node scripts/demo.mjs BV1HrJb6iEQk BV16CnZ6DEyc   # 真实数据演示（联网�
 - [dsh-bili-manager](https://github.com/lls578/dsh-bili-manager) —— B站 账号工具箱（whoami/stats/reply/pin/danmaku）
 - [dsh-meme-library](https://github.com/lls578/dsh-meme-library) —— 梗库（6668 条）
 
+## FAQ
+
+**Q：视频没有字幕，ish_claim_check 怎么办？**
+A：直接返回「没有字幕，无法核查」，不会硬猜。核查的前提是视频有字幕（B站 AI 字幕也算），没有字幕时只看 ish_scan 的浓度评分即可。
+
+**Q：为什么 @主人 比例权重这么高？**
+A：真人评论很少每条都 @人；大量 @主人 是 AI 鱼最稳定的特征（评论区实测可达 80%+）。
+
+
 ## License
 
 MIT
